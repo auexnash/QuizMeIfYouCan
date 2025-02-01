@@ -201,7 +201,6 @@ public class MCFourthPage extends javax.swing.JFrame {
     }//GEN-LAST:event_previousActionPerformed
 
     private void closeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_closeActionPerformed
-        
         this.dispose();
     }//GEN-LAST:event_closeActionPerformed
 

@@ -36,6 +36,10 @@
               <Component id="enter" min="-2" max="-2" attributes="0"/>
           </Group>
           <Group type="102" attributes="0">
+              <EmptySpace min="350" pref="350" max="-2" attributes="0"/>
+              <Component id="AllStudentResultButtn" min="-2" pref="260" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
               <EmptySpace min="310" pref="310" max="-2" attributes="0"/>
               <Component id="aboutUs" min="-2" max="-2" attributes="0"/>
           </Group>
@@ -48,6 +52,8 @@
               <Component id="close1" min="-2" pref="40" max="-2" attributes="0"/>
               <EmptySpace min="210" pref="210" max="-2" attributes="0"/>
               <Component id="enter" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="108" pref="108" max="-2" attributes="0"/>
+              <Component id="AllStudentResultButtn" min="-2" pref="60" max="-2" attributes="0"/>
           </Group>
           <Group type="102" attributes="0">
               <EmptySpace min="350" pref="350" max="-2" attributes="0"/>
@@ -88,6 +94,21 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="close1ActionPerformed"/>
       </Events>
     </Component>
+    <Component class="javax.swing.JButton" name="AllStudentResultButtn">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/AllStudentResult.png"/>
+        </Property>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="null"/>
+        </Property>
+        <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="contentAreaFilled" type="boolean" value="false"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AllStudentResultButtnActionPerformed"/>
+      </Events>
+    </Component>
     <Component class="javax.swing.JButton" name="aboutUs">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
@@ -106,7 +127,7 @@
     <Component class="javax.swing.JLabel" name="bgOne">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/designs (12).png"/>
+          <Image iconType="3" name="/designs (18).png"/>
         </Property>
       </Properties>
     </Component>

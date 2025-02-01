@@ -1,20 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
-
-/**
- *
- * @author Nash
- */
 import java.awt.*;
 import javax.swing.JOptionPane;
+import java.sql.*;
+import project.ConnectionProvider;
 public class SecondPage extends javax.swing.JFrame {
 
     public SecondPage() {
         initComponents();
         this.setVisible(true);
     }
+    
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -26,7 +20,7 @@ public class SecondPage extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         inputname = new java.awt.TextField();
-        jButton2 = new javax.swing.JButton();
+        next = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -63,13 +57,13 @@ public class SecondPage extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\nash\\Downloads\\Bottones\\next1.png")); // NOI18N
-        jButton2.setBorder(null);
-        jButton2.setBorderPainted(false);
-        jButton2.setContentAreaFilled(false);
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        next.setIcon(new javax.swing.ImageIcon("C:\\Users\\nash\\Downloads\\Bottones\\next1.png")); // NOI18N
+        next.setBorder(null);
+        next.setBorderPainted(false);
+        next.setContentAreaFilled(false);
+        next.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                nextActionPerformed(evt);
             }
         });
 
@@ -96,7 +90,7 @@ public class SecondPage extends javax.swing.JFrame {
                 .addComponent(Return1, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(490, 490, 490)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(next, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 960, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
@@ -115,7 +109,7 @@ public class SecondPage extends javax.swing.JFrame {
                 .addComponent(Return1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(360, 360, 360)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(next, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addComponent(jLabel3)
         );
 
@@ -132,7 +126,7 @@ public class SecondPage extends javax.swing.JFrame {
         this.dispose();        
     }//GEN-LAST:event_close2ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void nextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextActionPerformed
         String input = inputname.getText().trim(); // Trim to remove extra spaces
     if (input.isEmpty()) {
         JOptionPane.showMessageDialog(null, "Please Input Name", "Error", JOptionPane.ERROR_MESSAGE);
@@ -144,7 +138,7 @@ public class SecondPage extends javax.swing.JFrame {
         this.dispose();
     }
 
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_nextActionPerformed
 
     private void inputnameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inputnameActionPerformed
         // TODO add your handling code here:
@@ -187,16 +181,16 @@ public class SecondPage extends javax.swing.JFrame {
                 Secondframe.setLocationRelativeTo(null);
             }
         });
+        
     }
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Return1;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton close2;
     private java.awt.TextField inputname;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JButton next;
     // End of variables declaration//GEN-END:variables
 }

@@ -7,7 +7,6 @@ public class FirstPage extends javax.swing.JFrame {
     public FirstPage() {
         initComponents();
         this.setVisible(true);
-        
     }
 
     @SuppressWarnings("unchecked")
@@ -16,6 +15,7 @@ public class FirstPage extends javax.swing.JFrame {
 
         enter = new javax.swing.JButton();
         close1 = new javax.swing.JButton();
+        AllStudentResultButtn = new javax.swing.JButton();
         aboutUs = new javax.swing.JButton();
         bgOne = new javax.swing.JLabel();
 
@@ -43,6 +43,16 @@ public class FirstPage extends javax.swing.JFrame {
             }
         });
 
+        AllStudentResultButtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AllStudentResult.png"))); // NOI18N
+        AllStudentResultButtn.setBorder(null);
+        AllStudentResultButtn.setBorderPainted(false);
+        AllStudentResultButtn.setContentAreaFilled(false);
+        AllStudentResultButtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AllStudentResultButtnActionPerformed(evt);
+            }
+        });
+
         aboutUs.setIcon(new javax.swing.ImageIcon(getClass().getResource("/about Us.png"))); // NOI18N
         aboutUs.setBorder(null);
         aboutUs.setBorderPainted(false);
@@ -53,7 +63,7 @@ public class FirstPage extends javax.swing.JFrame {
             }
         });
 
-        bgOne.setIcon(new javax.swing.ImageIcon(getClass().getResource("/designs (12).png"))); // NOI18N
+        bgOne.setIcon(new javax.swing.ImageIcon(getClass().getResource("/designs (18).png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -66,6 +76,9 @@ public class FirstPage extends javax.swing.JFrame {
                 .addGap(310, 310, 310)
                 .addComponent(enter))
             .addGroup(layout.createSequentialGroup()
+                .addGap(350, 350, 350)
+                .addComponent(AllStudentResultButtn, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
                 .addGap(310, 310, 310)
                 .addComponent(aboutUs))
             .addComponent(bgOne)
@@ -75,7 +88,9 @@ public class FirstPage extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(close1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(210, 210, 210)
-                .addComponent(enter))
+                .addComponent(enter)
+                .addGap(108, 108, 108)
+                .addComponent(AllStudentResultButtn, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(350, 350, 350)
                 .addComponent(aboutUs))
@@ -100,14 +115,17 @@ public class FirstPage extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_aboutUsActionPerformed
 
+    private void AllStudentResultButtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AllStudentResultButtnActionPerformed
+        new AllStudentResult();
+        this.dispose();
+    }//GEN-LAST:event_AllStudentResultButtnActionPerformed
+
     
     public static void main(String args[]) {
 
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                
-                
-                    FirstPage Firstframe = new FirstPage();;
+            FirstPage Firstframe = new FirstPage();;
             Firstframe.setVisible(true);
             Firstframe.pack();
             Firstframe.setLocationRelativeTo(null);
@@ -117,6 +135,7 @@ public class FirstPage extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton AllStudentResultButtn;
     private javax.swing.JButton aboutUs;
     private javax.swing.JLabel bgOne;
     private javax.swing.JButton close1;

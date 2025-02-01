@@ -222,7 +222,7 @@ public class MCFirstPage extends javax.swing.JFrame {
     private void nextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextActionPerformed
         if (jRadioButton2.isSelected()){
            score.add(0,"Correct");
-            System.out.println("Correct");
+           System.out.println("Correct");
         }
         else {
             System.out.println("Wrong");
