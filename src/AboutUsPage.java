@@ -1,7 +1,7 @@
 
 public class AboutUsPage extends javax.swing.JFrame {
 
-
+a
     public AboutUsPage() {
         initComponents();
         this.setVisible(true);
